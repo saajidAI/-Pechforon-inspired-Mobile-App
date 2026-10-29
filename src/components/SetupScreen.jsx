@@ -37,7 +37,7 @@ export default function SetupScreen({ teams, setTeams, startGame }) {
           Acting, Posing, Mimicking are allowed in every round
         </p>
         <p className="text-sm font-bold text-black leading-relaxed">
-          প্যাঁচ deck এর সব শব্দ guess করা হয়ে গেলেই এক রাউন্ড শেষ হয়। ঐ কার্ডগুলোই আবার shuffle করে নতুন প্যাঁচ deck বানিয়ে পরের রাউন্ডে যেতে হবে। ৩ রাউন্ড শেষে যে টিমের বা যার পয়েন্ট সবচেয়ে বেশি তারাই বিজয়ী।
+          ৩ রাউন্ড শেষে যে টিমের বা যার পয়েন্ট সবচেয়ে বেশি তারাই বিজয়ী।
         </p>
       </div>
       

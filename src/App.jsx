@@ -4,9 +4,10 @@ import SetupScreen from './components/SetupScreen';
 import PlayScreen from './components/PlayScreen';
 import RoundEndScreen from './components/RoundEndScreen';
 import GameOverScreen from './components/GameOverScreen';
+import InstructionScreen from './components/InstructionScreen';
 
 export default function App() {
-  const [gameState, setGameState] = useState('setup'); 
+  const [gameState, setGameState] = useState('instructions'); 
   const [teams, setTeams] = useState([]);
   const [unplayedWords, setUnplayedWords] = useState([...MASTER_WORD_LIST]);
   const [gameWords, setGameWords] = useState([]); 
@@ -95,7 +96,10 @@ export default function App() {
   };
 
   // State Machine Routing
+  // State Machine Routing
   switch (gameState) {
+    case 'instructions':
+      return <InstructionScreen onNext={() => setGameState('setup')} />;
     case 'setup':
       return <SetupScreen teams={teams} setTeams={setTeams} startGame={startGame} />;
     case 'play':
