@@ -1,16 +1,23 @@
-# React + Vite
+# প্যাঁচফোড়ন (Pechforon) - Digital Edition 🎲
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A digital web adaptation of the popular Bengali charades board game, "প্যাঁচফোড়ন". This interactive application fully recreates the physical card game experience, complete with an authentic UI, automated timers, and structured round tracking.
 
-Currently, two official plugins are available:
+**[🎮 Play the Live Game Here](https://fascinating-paletas-c7323e.netlify.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
+* **Multiplayer Setup:** Dynamically add multiple teams with custom player names.
+* **Automated Gameplay Loop:** Tracks active teams, 45-second turn timers, and points across 3 distinct rounds.
+* **Dynamic Rulesets:** Implements the specific rules of the original game (Unlimited guesses in Round 1, Single guess in Round 2, No passes in Round 3).
+* **Authentic UI/UX:** Features a responsive, mobile-first design with a custom hand-drawn doodle background, Bengali typography (Atma font), and vivid color matching to replicate the physical game box.
 
-## React Compiler
+## 🛠️ Tech Stack
+* **Frontend:** React (Modular component architecture)
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS (v3)
+* **Deployment:** Netlify (Continuous Integration)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 How to Run Locally
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/saajidAI/-Pechforon-inspired-Mobile-App.git](https://github.com/saajidAI/-Pechforon-inspired-Mobile-App.git)
