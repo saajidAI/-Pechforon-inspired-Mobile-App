@@ -15,14 +15,28 @@ export default function SetupScreen({ teams, setTeams, startGame }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#EAB308] bg-[url('/doodles.jpg')] bg-cover bg-center bg-blend-overlay text-[#991b1b] p-6 font-sans flex flex-col items-center">
-      <h1 className="text-5xl font-black mb-2 tracking-tighter drop-shadow-md">প্যাঁচফোড়ন</h1>
+    <div className="min-h-screen bg-[#fde047] bg-[url('/doodles.jpg')] bg-repeat bg-[length:800px_800px] bg-blend-multiply text-[#991b1b] p-6 font-sans flex flex-col items-center">
       
-      <div className="text-center mb-8 max-w-md px-2">
-        <p className="text-sm font-black text-[#991b1b] mb-3 uppercase drop-shadow-sm tracking-wide">
+      <h1 
+        className="text-7xl font-bengali mb-4 mt-6 text-[#991b1b] tracking-wide"
+        style={{
+          textShadow: `
+            -2px -2px 0 #000,  
+             2px -2px 0 #000,
+            -2px  2px 0 #000,
+             2px  2px 0 #000,
+             6px  6px 0 #000
+          `
+        }}
+      >
+        প্যাঁচফোড়ন
+      </h1>
+      
+      <div className="text-center mb-8 max-w-md px-2 bg-white/70 p-4 rounded-xl border-2 border-black backdrop-blur-sm shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+        <p className="text-sm font-black text-[#991b1b] mb-3 uppercase tracking-wide">
           Acting, Posing, Mimicking are allowed in every round
         </p>
-        <p className="text-sm font-bold text-black leading-relaxed bg-[#fef3c7] p-4 rounded-lg border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+        <p className="text-sm font-bold text-black leading-relaxed">
           প্যাঁচ deck এর সব শব্দ guess করা হয়ে গেলেই এক রাউন্ড শেষ হয়। ঐ কার্ডগুলোই আবার shuffle করে নতুন প্যাঁচ deck বানিয়ে পরের রাউন্ডে যেতে হবে। ৩ রাউন্ড শেষে যে টিমের বা যার পয়েন্ট সবচেয়ে বেশি তারাই বিজয়ী।
         </p>
       </div>
